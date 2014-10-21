@@ -3,4 +3,4 @@ mkdir "video/frames"
 
 # $1 = input file
 ffmpeg -i "$1" "./video/frames/$2_%05d.jpg"
-ffmpeg -i "$1" -vn -f mp3 "./video/audio.mp3"
+ffmpeg -i "$1" -vn -acodec -f mp3 "./video/audio.mp3"
